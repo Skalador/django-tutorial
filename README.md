@@ -9,6 +9,11 @@ source venv/bin/activate
 python -m pip install django
 ```
 
+## Migrations
+
+- Run `python manage.py makemigrations` to create migrations for those changes
+- Run `python manage.py migrate` to apply those changes to the database.
+
 ## Gitignore
 
 To update `.gitignore` use [gitignore.io](https://www.gitignore.io)
