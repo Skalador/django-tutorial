@@ -21,4 +21,5 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('htmlcsstemps/', include('htmlcsstemps.urls')),
+    path('patternfly/', include('patternfly.urls')),
 ]

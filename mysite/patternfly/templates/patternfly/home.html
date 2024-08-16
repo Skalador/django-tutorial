@@ -1,0 +1,93 @@
+{% extends "patternfly/base.html" %}
+
+{% block title %}
+Title
+{% endblock %}
+
+{% block content %}
+<div class="pf-v5-c-page">
+  
+    
+  <div class="pf-v5-c-banner">
+      <div class="pf-v5-l-flex pf-m-space-items-sm">
+        <div class="pf-v5-l-flex__item">
+          <span class="pf-v5-screen-reader">Default banner:</span>
+    
+          <i class="fas fa-bell" aria-hidden="true"></i>
+        </div>
+        <div class="pf-v5-l-flex__item">Default banner</div>
+      </div>
+    </div>
+
+  <!-- Sidebar -->
+  <div class="pf-v5-c-page__sidebar">
+    <div class="pf-v5-c-page__sidebar-body">
+      <nav class="pf-v5-c-nav pf-m-dark">
+        <ul class="pf-v5-c-nav__list">
+          <li class="pf-v5-c-nav__item">
+            <a href="#" class="pf-v5-c-nav__link pf-m-current">Overview</a>
+          </li>
+          <li class="pf-v5-c-nav__item">
+            <a href="#" class="pf-v5-c-nav__link">Builds</a>
+          </li>
+          <li class="pf-v5-c-nav__item">
+            <a href="#" class="pf-v5-c-nav__link">Deployments</a>
+          </li>
+          <li class="pf-v5-c-nav__item">
+            <a href="#" class="pf-v5-c-nav__link">Networking</a>
+          </li>
+          <li class="pf-v5-c-nav__item">
+            <a href="#" class="pf-v5-c-nav__link">Storage</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="pf-v5-c-page__main">
+    <!-- Top Navigation -->
+    <header class="pf-v5-c-page__header pf-m-dark">
+      <div class="pf-v5-c-page__header-brand">
+        <img class="pf-v5-c-brand" src="https://www.example.com/favicon.ico" alt="Logo" />
+        <h1 class="pf-v5-c-title pf-m-xl">Product</h1>
+      </div>
+    </header>
+
+    <section class="pf-v5-c-page__main-section pf-m-dark-100">
+      <!-- Breadcrumb -->
+      <nav class="pf-v5-c-breadcrumb">
+        <ol class="pf-v5-c-breadcrumb__list">
+          <li class="pf-v5-c-breadcrumb__item">
+            <a href="#" class="pf-v5-c-breadcrumb__link">Home</a>
+          </li>
+          <li class="pf-v5-c-breadcrumb__item">
+            <span class="pf-v5-c-breadcrumb__item-divider"></span>
+            <a href="#" class="pf-v5-c-breadcrumb__link pf-m-current" aria-current="page">Overview</a>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Dashboard Cards -->
+      <div class="pf-l-gallery pf-m-gutter">
+        <div class="pf-v5-c-card pf-m-selectable pf-m-hoverable">
+          <div class="pf-v5-c-card__title">Builds</div>
+          <div class="pf-v5-c-card__body">Status: 3 Successful, 1 Failed</div>
+        </div>
+        <div class="pf-v5-c-card pf-m-selectable pf-m-hoverable">
+          <div class="pf-v5-c-card__title">Deployments</div>
+          <div class="pf-v5-c-card__body">2 Active, 1 Paused</div>
+        </div>
+        <div class="pf-v5-c-card pf-m-selectable pf-m-hoverable">
+          <div class="pf-v5-c-card__title">Pods</div>
+          <div class="pf-v5-c-card__body">5 Running, 1 Crashed</div>
+        </div>
+        <div class="pf-v5-c-card pf-m-selectable pf-m-hoverable">
+          <div class="pf-v5-c-card__title">Services</div>
+          <div class="pf-v5-c-card__body">4 Available, 0 Unavailable</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

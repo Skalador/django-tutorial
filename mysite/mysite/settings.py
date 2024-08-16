@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
     'htmlcsstemps.apps.HtmlcsstempsConfig',
+    'patternfly.apps.PatternflyConfig',
 ]
 
 MIDDLEWARE = [
